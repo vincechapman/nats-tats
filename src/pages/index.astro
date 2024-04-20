@@ -4,6 +4,7 @@ import Logo from "../components/Logo.astro";
 import SideMenu from "../components/SideMenu.astro";
 import { Image } from "astro:assets";
 import Flash from "../components/images/flash-sheets/flashsheet1.png";
+import Naomi from "../components/images/naomi1.jpeg";
 import BackgroundArt from "../components/BackgroundArt.astro";
 ---
 <BaseLayout>
@@ -11,6 +12,9 @@ import BackgroundArt from "../components/BackgroundArt.astro";
 		<SideMenu />
 		<Logo />
 		<Image src={Flash} alt="Flash" width={700} style="margin-top: 20px;"/>
+		<div style="position: absolute; top: 100px; right: 500px;">
+			<Image src={Naomi} alt="Naomi" width={500} style="margin-top: 20px;"/>
+		</div>
 		<BackgroundArt />
 	</div>
 </BaseLayout>

@@ -1,0 +1,20 @@
+---
+import TopMenu from "../components/TopMenu.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout>
+	<div class="container">
+		<TopMenu />
+		<slot />
+	</div>
+</BaseLayout>
+
+<style>
+	.container {
+		width: 100%;
+		max-width: 1500px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+</style>
