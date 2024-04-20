@@ -1,7 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Logo from "../components/Logo.astro";
+import SideMenu from "../components/SideMenu.astro";
 ---
-
 <BaseLayout>
-	<h1>Astro</h1>
+	<div class="container-1">
+		<SideMenu />
+		<Logo />
+	</div>
 </BaseLayout>
+
+<style>
+	.container-1 {
+		position: relative;
+		flex-grow: 1;
+		padding: 100px;
+	}
+</style>

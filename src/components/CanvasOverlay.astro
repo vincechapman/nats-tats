@@ -1,0 +1,21 @@
+---
+import { getImage } from "astro:assets";
+import Canvas from "../components/texture-canvas.png";
+const optimizedCanvas = await getImage({ src: Canvas, format: "webp" });
+---
+
+<!-- Background -->
+<div style={`background-image: url(${optimizedCanvas.src});`}></div>
+
+<style>
+    div {
+        background-size: 110%;
+        z-index: -10;
+        opacity: 0.3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
