@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 :root {
-  --color-black: #051827;
-  --color-primary: #f9f871;
+  --color-black: #000000;
+  --color-dark: #052c4d;
+  --color-primary: #246dcc;
   --color-secondary: #f9f871;
   --color-tertiary: #f9f871;
   --color-text: #f9f871;
