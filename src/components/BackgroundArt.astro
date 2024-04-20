@@ -1,0 +1,22 @@
+---
+import { getImage } from "astro:assets";
+import Flash2 from "../components/images/flash-sheets/flashsheet2.png";
+const flash2Optimized = await getImage({ src: Flash2, format: "webp" });
+---
+
+<div style={`background-image: url(${flash2Optimized.src});`}></div>
+
+<style>
+    div {
+        background-size: cover;
+        background-position: bottom 0px right 0px;
+        background-blend-mode: exclusion;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.02;
+        z-index: -100;
+    }
+</style>

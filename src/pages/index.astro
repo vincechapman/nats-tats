@@ -4,12 +4,14 @@ import Logo from "../components/Logo.astro";
 import SideMenu from "../components/SideMenu.astro";
 import { Image } from "astro:assets";
 import Flash from "../components/images/flash-sheets/flashsheet1.png";
+import BackgroundArt from "../components/BackgroundArt.astro";
 ---
 <BaseLayout>
 	<div class="container-1">
 		<SideMenu />
 		<Logo />
 		<Image src={Flash} alt="Flash" width={700} style="margin-top: 20px;"/>
+		<BackgroundArt />
 	</div>
 </BaseLayout>
 
