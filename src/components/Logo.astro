@@ -1,5 +1,21 @@
+<script>
+    const logoText = document.getElementById('logo-text');
+    if (logoText) {
+        const string = "Nats Tats.";
+        let idx = 0;
+        const interval = setInterval(() => {
+            if (idx >= string.length) {
+                clearInterval(interval);
+                return;
+            }
+            logoText.innerHTML += string[idx];
+            idx++;
+        }, 100);
+    }
+</script>
+
 <div class="logo-container">
-    <h1>Nats Tats</h1>
+    <h1 id="logo-text" />
 </div>
 
 <style>
